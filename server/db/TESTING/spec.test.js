@@ -14,18 +14,6 @@ describe("GraceShopper Tests", () => {
   });
   let seedData;
   describe("Product Model", () => {
-    it("is truthy", async () => {
-      const productTwo = await Product.create({
-        name: "Huggies",
-        description: "this diaper absorbs everything!!",
-        price: 12.99,
-        size: "medium",
-        inventory: 20,
-        status: "active",
-      });
-
-      expect(productTwo.name).toBe("Huggies");
-    });
     it("seeds data properly", async () => {
       seedData = await initTest();
       expect(seedData.productArr.length).toBe(3);
