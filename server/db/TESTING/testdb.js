@@ -1,6 +1,10 @@
 const Sequelize = require("sequelize");
+const config = {
+  logging: false,
+};
 const db = new Sequelize(
-  process.env.DATABASE_URL || "postgres://localhost/grace_shopper_test"
+  process.env.DATABASE_URL || "postgres://localhost/grace_shopper_test",
+  config
 );
 
 const Category = db.define("category", {
