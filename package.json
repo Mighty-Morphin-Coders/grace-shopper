@@ -4,7 +4,7 @@
   "description": "Hey all, this is our Grace Shopper, Plant Parenthood!",
   "main": "index.js",
   "engines": {
-    "node": "15.x"
+    "node": "15.6.0"
   },
   "scripts": {
     "test": "jest --detectOpenHandles --forceExit",
