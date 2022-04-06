@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Hey all, this is our Grace Shopper, Plant Parenthood!",
   "main": "index.js",
+  "engines": {
+    "node": "15.x"
+  },
   "scripts": {
     "test": "jest --detectOpenHandles --forceExit",
     "test:dev": "npm run test -- --watch",
