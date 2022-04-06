@@ -12,7 +12,8 @@
     "build": "webpack",
     "build:dev": "webpack -w --mode=development",
     "start:dev": "npm run build:dev & nodemon server/index.js --ignore client --ignore public",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "seed": "node ./server/db/seed2.js"
   },
   "repository": {
     "type": "git",
